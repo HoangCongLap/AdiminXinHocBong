@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xinhocbong.function.AwardedScholarshipController">
+   <children>
+      <Label alignment="CENTER" layoutX="102.0" prefHeight="71.0" prefWidth="500.0" style="-fx-background-color: #00FFFF;" text="AWARDED A SCHOLARSHIP">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Id1" layoutX="126.0" layoutY="90.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="NGAYNHAN" layoutX="99.0" layoutY="142.0" text="NGÀY NHẬN:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="SOTIEN" layoutX="97.0" layoutY="198.0" text="SỐ TIỀN:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="TOCHUC" layoutX="99.0" layoutY="252.0" prefHeight="26.0" prefWidth="90.0" text="TỔ CHỨC:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idUp" layoutX="217.0" layoutY="88.0" onAction="#IdUpDateAction" prefHeight="25.0" prefWidth="274.0" />
+      <TextField fx:id="ngayNhan" layoutX="217.0" layoutY="140.0" onAction="#ngayNhanUpDateAction" prefHeight="25.0" prefWidth="274.0" />
+      <TextField fx:id="soTienUP" layoutX="217.0" layoutY="196.0" onAction="#soTienUpDateAction" prefHeight="25.0" prefWidth="274.0" />
+      <TextField fx:id="toChuc" layoutX="217.0" layoutY="253.0" onAction="#toChucUpDateAction" prefHeight="25.0" prefWidth="274.0" />
+      <Button fx:id="updateSinhVien" layoutX="275.0" layoutY="341.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="exitUpDate" layoutX="433.0" layoutY="341.0" mnemonicParsing="false" onAction="#exitUpDate" prefHeight="25.0" prefWidth="140.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="71.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/IG1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

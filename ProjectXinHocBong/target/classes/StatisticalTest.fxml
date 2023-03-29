@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="507.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xinhocbong.function.StatisticalController">
+   <children>
+      <AnchorPane layoutY="41.0" prefHeight="466.0" prefWidth="222.0" style="-fx-background-color: #C0C0C0;">
+         <children>
+            <Button fx:id="exitStatistical" layoutX="22.0" layoutY="345.0" mnemonicParsing="false" onAction="#exitStatisticalAction" prefHeight="28.0" prefWidth="186.0" text="Exit">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+      <Button layoutX="56.0" layoutY="404.0" mnemonicParsing="false" onAction="#removeStatistical" prefHeight="26.0" prefWidth="110.0" text="Remove" />
+            <Button fx:id="info" layoutX="22.0" layoutY="250.0" mnemonicParsing="false" onAction="#infoAction" prefHeight="30.0" prefWidth="186.0" text="Student Information">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="info1" layoutX="22.0" layoutY="295.0" mnemonicParsing="false" onAction="#infoActionRecivedSholar" prefHeight="30.0" prefWidth="185.0" text="Student Received Scholarship">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_users" layoutX="222.0" layoutY="39.0" prefHeight="466.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="col_Mssv" prefWidth="79.19998168945312" text="MSSV" />
+          <TableColumn fx:id="col_Name" prefWidth="116.80006408691406" text="NAME" />
+            <TableColumn fx:id="col_Gender" prefWidth="64.0" text="GENDER" />
+            <TableColumn fx:id="col_BrithDate" prefWidth="88.0" text="BRITH DATE" />
+            <TableColumn fx:id="col_OverallScore" prefWidth="103.20001220703125" text="OVERALL SCORE" />
+            <TableColumn fx:id="col_FamilySituation" prefWidth="122.4000244140625" text="FAMILY SITUATION" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="55.0" prefHeight="39.0" prefWidth="743.0" style="-fx-background-color: #00FFFF;" text="STATISTICAL">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="85.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/IG1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xinhocbong.function.ScholarStudentsViewController">
+   <children>
+      <TableView fx:id="tableV_inforAca" layoutX="23.0" layoutY="60.0" prefHeight="342.0" prefWidth="919.0">
+        <columns>
+            <TableColumn fx:id="col_Mssv" prefWidth="75.0" text="MSSV" />
+            <TableColumn fx:id="col_Name" prefWidth="108.79998779296875" text="NAME" />
+            <TableColumn fx:id="col_Gender" prefWidth="59.20001220703125" text="GENDER" />
+            <TableColumn fx:id="col_BrithDate" prefWidth="100.80000305175781" text="BRITHDATE" />
+            <TableColumn fx:id="col_OverallScore" prefWidth="95.20001220703125" text="OVERALLSCORE" />
+            <TableColumn fx:id="col_FamilySituation" prefWidth="120.79998779296875" text="FAMILYSITUATION" />
+          <TableColumn fx:id="col_IDHocBong" prefWidth="86.39996337890625" text="IDHOCBONG" />
+          <TableColumn fx:id="col_NgayNhan" prefWidth="81.5999755859375" text="NGAYNHAN" />
+            <TableColumn fx:id="col_SoTien" prefWidth="88.7999267578125" text="SOTIEN" />
+            <TableColumn fx:id="col_TenToChuc" prefWidth="99.2000610351563" text="TENTOCHUC" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="77.0" prefHeight="53.0" prefWidth="886.0" style="-fx-background-color: #00FFFF;" text="ALL STUDENT  RECEIVED SCHOLARSHIP">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Exit" layoutX="804.0" layoutY="410.0" mnemonicParsing="false" onAction="#exitStudentReceivedScholarship" prefHeight="26.0" prefWidth="105.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="53.0" fitWidth="106.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/IG1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
